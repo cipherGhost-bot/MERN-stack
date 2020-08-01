@@ -16,7 +16,7 @@ exports.getToken = function(user) {
         {expiresIn: 3600});
 };
 
-var opts = {};
+let opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = config.secretKey;
 
